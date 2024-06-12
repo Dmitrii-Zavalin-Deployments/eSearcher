@@ -1,12 +1,12 @@
-name: Grant Search Automation
+name: eSearcher
 
-# on:
-#   push:
-#     branches:
-#       - main
-#       - development
-#   schedule:
-#     - cron: '0 0 * * *' # Runs every day at midnight
+on:
+  # push:
+  #   branches:
+  #     - main
+  #     - development
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
 
 jobs:
   search_grants:
@@ -28,8 +28,8 @@ jobs:
       - name: Run Unit Tests
         run: python -m unittest discover -s tests
 
-      # - name: Run Grant Searcher
-      #   run: python main.py
+      - name: Run eSearcher
+        run: python main.py
 
       - name: List directory contents
         run: ls -la
