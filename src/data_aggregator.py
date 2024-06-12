@@ -29,11 +29,23 @@ class DataAggregator:
         with open(self.found_file_path, 'w') as file:
             json.dump(data, file, indent=4)
 
+    def read_search_name(self):
+        file_path = f'data/{self.query_folder}/search_name.txt'
+        if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
+            with open(file_path, 'r') as file:
+                return file.read().strip()
+        else:
+            return None
+
     def add_found_data(self, query_data, links):
         self.append_links_to_file(links)
         found_data = self.read_found_data()
         
-        query_key = self.query_folder
+        query_key = self.read_search_name()
+        if query_key is None:
+            self.logger.error("Search name file is empty or does not exist.")
+            return found_data
+
         if query_key not in found_data:
             found_data[query_key] = []
 
