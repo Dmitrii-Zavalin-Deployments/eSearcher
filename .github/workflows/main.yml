@@ -1,0 +1,50 @@
+name: Grant Search Automation
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - development
+#   schedule:
+#     - cron: '0 0 * * *' # Runs every day at midnight
+
+jobs:
+  search_grants:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Unit Tests
+        run: python -m unittest discover -s tests
+
+      # - name: Run Grant Searcher
+      #   run: python main.py
+
+      - name: List directory contents
+        run: ls -la
+
+      - name: Set run number
+        run: echo "GITHUB_RUN_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV
+
+      #- name: Commit and push changes
+      #  env:
+      #    MY_USER_NAME: ${{ secrets.MY_USER_NAME }}
+      #    MY_USER_EMAIL: ${{ secrets.MY_USER_EMAIL }}
+      #    GITHUB_RUN_NUMBER: ${{ env.GITHUB_RUN_NUMBER }}
+      #  run: |
+      #    git config --global user.name "${{ secrets.MY_USER_NAME }}"
+      #    git config --global user.email "${{ secrets.MY_USER_EMAIL }}"
+      #    git add grants.html data/grants.json
+      #    git commit -m "Update grants.html with run number $GITHUB_RUN_NUMBER" -a || echo "No changes to commit"
+      #    git push origin "${{ github.ref }}" || echo "No changes to push"
