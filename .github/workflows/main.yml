@@ -8,6 +8,9 @@ on:
   schedule:
     - cron: '0 0 * * *' # Runs every day at midnight
 
+env:
+  NUMBER_OF_QUERIES: 1  # Set this to the number of folders with numbers (0,1,2,...) in eSearcher/data directory (for example, if there is only folder 0, set this as 1 (one folder))
+
 jobs:
   search_grants:
     runs-on: ubuntu-latest
