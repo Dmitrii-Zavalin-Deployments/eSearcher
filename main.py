@@ -1,43 +1,27 @@
 from src.query_builder import QueryBuilder
 from src.search_executor import SearchExecutor
 from src.html_generator import HTMLGenerator
-from src.pdf_downloader import PDFDownloader
-from src.pdf_parser import PDFParser
 from src.data_aggregator import DataAggregator
-from src.file_deleter import FileDeleter
 
 def main():
     # Initialize modules
     query_builder = QueryBuilder()
-    # search_executor = SearchExecutor()
-    downloader = PDFDownloader()
-    parser = PDFParser()
-    aggregator = DataAggregator('data/grants.json')
-    deleter = FileDeleter('downloaded_file.pdf')
+    search_executor = SearchExecutor()
+    aggregator = DataAggregator('data/data.json')
     html_generator = HTMLGenerator()
     
     # Build the search query
     query_data = query_builder.get_query_data()
-    # print(f'Domain: {query_data["name"]}')
-    # print(f'Query: {query_data["query"]}')
     
     # Execute the search and get PDF links
-    pdf_links = [] # search_executor.execute_search(query)
+    links = search_executor.execute_search(query_data)
     
-    # Continue with downloading, parsing, aggregating
-    for pdf_url in pdf_links:
-        # Download pdf from each link
-        # downloader.download_pdf(pdf_url) # Commented not to spam on testing
-        # Parse pdf from each download
-        parsed_data = parser.parse_pdf('downloaded_file.pdf')
-        print('Data is parsed')
-        # print(parsed_data)
-        # Delete parsed pdf file
-        deleter.delete_file()
+    # Continue with aggregating and generating HTML
+    for url in links:
         # Aggregate data for grants.json and html
-        grants_data = aggregator.add_grant_data(query_data, pdf_url, parsed_data)
+        found_data = aggregator.add_grant_data(query_data, url)
         # Generating HTML 
-        html_generator.generate_html(grants_data)
+        html_generator.generate_html(found_data)
 
 if __name__ == "__main__":
     main()
