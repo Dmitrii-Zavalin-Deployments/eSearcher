@@ -16,11 +16,9 @@ class SearchExecutor:
 
             found_links = []
             for item in results.get('items', []):
-                print(item['title'], item['link'])
                 found_links.append(item['link'])
 
             return found_links
         except requests.exceptions.RequestException as e:
-            print(f"An error occurred: {e}")
+            print(f"An error occurred in SearchExecutor: {e}")
             return []
-
