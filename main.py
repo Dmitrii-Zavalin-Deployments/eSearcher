@@ -1,3 +1,4 @@
+import os
 from src.query_builder import QueryBuilder
 from src.search_executor import SearchExecutor
 from src.html_generator import HTMLGenerator
@@ -5,7 +6,7 @@ from src.data_aggregator import DataAggregator
 
 def main():
     # Initialize modules
-    query_builder = QueryBuilder()
+    query_builder = QueryBuilder(int(os.getenv('NUMBER_OF_QUERIES')))
     search_executor = SearchExecutor()
     aggregator = DataAggregator('data/data.json')
     html_generator = HTMLGenerator()
