@@ -6,6 +6,17 @@ class DataAggregator:
     def __init__(self, grants_file_path):
         self.grants_file_path = grants_file_path
         self.logger = logging.getLogger(__name__)
+        self.run_number = int(os.getenv('GITHUB_RUN_NUMBER', 0))
+        self.query_folder = self.run_number % int(os.getenv('NUMBER_OF_QUERIES', 1))
+        print(f'GitHub Actions Run Number: {self.run_number}')
+        print(f'Number of Queries: {os.getenv("NUMBER_OF_QUERIES", 1)}')
+        print(f'Query Folder: {self.query_folder}')
+
+    def append_links_to_file(self, links):
+        file_path = f'data/{self.query_folder}/none_words.txt'
+        with open(file_path, 'a') as file:
+            for link in links:
+                file.write(link + '\n')
 
     def read_grants_data(self):
         if os.path.exists(self.grants_file_path) and os.path.getsize(self.grants_file_path) > 0:
@@ -18,33 +29,15 @@ class DataAggregator:
         with open(self.grants_file_path, 'w') as file:
             json.dump(data, file, indent=4)
 
-    def add_grant_data(self, query_data, pdf_url, parsed_data):
+    def add_grant_data(self, query_data, links):
+        self.append_links_to_file(links)
         grants_data = self.read_grants_data()
         
-        # Check if the PDF URL already exists in the system
-        for grant_id, grant_info in grants_data.items():
-            if grant_info.get('link') == pdf_url:
-                print(f"The grant with url: {pdf_url} is already in the system.")
-                return grants_data
+        query_key = query_data['query']
+        if query_key not in grants_data:
+            grants_data[query_key] = []
+
+        grants_data[query_key].extend(links)
         
-        # If the PDF URL does not exist, create a new entry
-        new_grant_data = {
-            "name": query_data["name"],
-            "funds": ' '.join(parsed_data["Funds"]),
-            "dates": ' '.join(parsed_data["Dates"]),
-            "requirements": ' '.join(parsed_data["Requirements"]),
-            "documents": ' '.join(parsed_data["Documents"]),
-            "summary": ' '.join(parsed_data["Summary"]),
-            "link": pdf_url,
-            "query": query_data["query"]
-        }
-        
-        # Find the next available key
-        next_key = str(max([int(k) for k in grants_data.keys()], default=-1) + 1)
-        grants_data[next_key] = new_grant_data
-        
-        # Write the updated data back to the file
         self.write_grants_data(grants_data)
-        print(f"Added new grant data for url: {pdf_url}")
         return grants_data
-    
