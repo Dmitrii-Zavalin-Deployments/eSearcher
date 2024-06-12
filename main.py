@@ -23,7 +23,7 @@ def main():
         print("Found links:", links)
         
         # Aggregate data for grants.json and html
-        found_data = aggregator.add_grant_data(query_data, links)
+        found_data = aggregator.add_found_data(query_data, links)
         print("Aggregated data:", found_data)
         
         # Generating HTML 
