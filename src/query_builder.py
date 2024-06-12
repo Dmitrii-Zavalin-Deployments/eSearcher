@@ -2,53 +2,45 @@ import os
 import json
 
 class QueryBuilder:
-    def __init__(self):
+    def __init__(self, NUMBER_OF_QUERIES):
+        self.run_number = int(os.getenv('GITHUB_RUN_NUMBER', 0))
+        self.query_folder = self.run_number % NUMBER_OF_QUERIES
+        print(f'GitHub Actions Run Number: {self.run_number}')
+        print(f'Number of Queries: {NUMBER_OF_QUERIES}')
+        print(f'Query Folder: {self.query_folder}')
+        
         # Load search terms from files
-        self.all_words = self.load_search_terms('data/all_words.txt')
-        self.any_words = self.load_search_terms('data/any_words.txt')
-        self.none_words = self.load_search_terms('data/none_words.txt')
-        self.run_number = os.getenv('GITHUB_RUN_NUMBER')
+        self.all_words = self.load_search_terms(f'data/{self.query_folder}/all_words.txt')
+        self.exact_phrase = self.load_search_terms(f'data/{self.query_folder}/exact_phrase.txt')
+        self.any_words = self.load_search_terms(f'data/{self.query_folder}/any_words.txt')
+        self.none_words = self.load_search_terms(f'data/{self.query_folder}/none_words.txt')
+        self.domain = self.load_search_terms(f'data/{self.query_folder}/domain.txt')
+        self.file_type = self.load_search_terms(f'data/{self.query_folder}/file_type.txt')
 
     def build_query(self):
-        # Construct the search query using the run number
-        # ...
-        return "query"
+        query_parts = []
+
+        if self.all_words:
+            query_parts.append(' '.join(self.all_words))
+        if self.exact_phrase:
+            query_parts.append(f'"{" ".join(self.exact_phrase)}"')
+        if self.any_words:
+            query_parts.append(' '.join(self.any_words))
+        if self.none_words:
+            query_parts.append(' '.join(f'-{word}' for word in self.none_words))
+        if self.domain:
+            query_parts.append(f'site:{self.domain[0]}')
+        if self.file_type:
+            query_parts.append(f'filetype:{self.file_type[0]}')
+
+        return ' '.join(query_parts)
 
     def get_query_data(self):
-        # Get the current domain number
-        current_domain_number = self.current_number_of_domain()
-        # Load the domains dictionary
-        domains_dict = self.load_domains()
-        # Get the domain data using the current domain number
-        domain_data = domains_dict.get(str(current_domain_number), {})
-        # Generate the dictionary with the domain "name" and "query"
         return {
-            "name": domain_data.get("name", "default_name"),  # Use a default value if not found
             "query": self.build_query()
         }
 
-    def load_domains(self):
-        # Read the domains.json file and create a dictionary with incremental keys starting from 0
-        with open('data/domains.json', 'r') as file:
-            domains_list = json.load(file)
-        
-        domains_dict = {str(i): domain for i, domain in enumerate(domains_list)}
-        return domains_dict
-
-    def get_next_domain_key(self):
-            domains_dict = self.load_domains()
-            max_key = max(map(int, domains_dict.keys()))  # Convert keys to integers and find the max
-            return max_key + 1
-    
-    def current_number_of_domain(self):
-        next_domain_key = self.get_next_domain_key()
-        if self.run_number is not None:
-            return int(self.run_number) % next_domain_key
-        else:
-            return 0  # Default to 0 if run_number is not set
-        
     def load_search_terms(self, file_path):
-        # This method will read search terms from a file and return them as a list
         try:
             with open(file_path, 'r') as file:
                 terms = file.read().splitlines()
