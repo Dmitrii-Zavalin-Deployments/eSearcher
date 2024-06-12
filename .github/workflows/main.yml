@@ -9,6 +9,8 @@ on:
     - cron: '0 0 * * *' # Runs every day at midnight
 
 env:
+  API_KEY: ${{ secrets.API_KEY }}
+  SEARCH_ENGINE_ID: ${{ secrets.SEARCH_ENGINE_ID }}
   NUMBER_OF_QUERIES: 1  # Set this to the number of folders with numbers (0,1,2,...) in eSearcher/data directory (for example, if there is only folder 0, set this as 1 (one folder))
 
 jobs:
