@@ -1,10 +1,10 @@
 name: eSearcher
 
 on:
-  # push:
-  #   branches:
-  #     - main
-  #     - development
+  push:
+    branches:
+      - main
+      - development
   schedule:
     - cron: '0 0 * * *' # Runs every day at midnight
 
@@ -31,11 +31,8 @@ jobs:
       - name: Run Unit Tests
         run: python -m unittest discover -s tests
 
-      # - name: Run eSearcher
-      #  run: python main.py
-
-      - name: List directory contents
-        run: ls -la
+      - name: Run eSearcher
+        run: python main.py
 
       - name: Set run number
         run: echo "GITHUB_RUN_NUMBER=${{ github.run_number }}" >> $GITHUB_ENV

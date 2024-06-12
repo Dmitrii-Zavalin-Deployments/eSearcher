@@ -14,12 +14,12 @@ class SearchExecutor:
             response.raise_for_status()
             results = response.json()
 
-            pdf_links = []
+            found_links = []
             for item in results.get('items', []):
                 print(item['title'], item['link'])
-                pdf_links.append(item['link'])
+                found_links.append(item['link'])
 
-            return pdf_links
+            return found_links
         except requests.exceptions.RequestException as e:
             print(f"An error occurred: {e}")
             return []

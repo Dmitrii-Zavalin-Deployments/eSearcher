@@ -17,12 +17,11 @@ def main():
     # Execute the search and get PDF links
     links = search_executor.execute_search(query_data)
     
-    # Continue with aggregating and generating HTML
-    for url in links:
-        # Aggregate data for grants.json and html
-        found_data = aggregator.add_grant_data(query_data, url)
-        # Generating HTML 
-        html_generator.generate_html(found_data)
+    # Aggregate data for grants.json and html
+    # found_data = aggregator.add_grant_data(query_data, links)
+    
+    # Generating HTML 
+    # html_generator.generate_html(found_data)
 
 if __name__ == "__main__":
     main()
