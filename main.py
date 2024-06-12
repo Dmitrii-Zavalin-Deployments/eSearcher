@@ -24,6 +24,7 @@ def main():
         
         # Aggregate data for grants.json and html
         found_data = aggregator.add_grant_data(query_data, links)
+        print("Aggregated data:", found_data)
         
         # Generating HTML 
         # html_generator.generate_html(found_data)
