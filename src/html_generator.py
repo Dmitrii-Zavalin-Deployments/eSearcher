@@ -1,6 +1,9 @@
 import os
 
 class HTMLGenerator:
+    def __init__(self, found_data):
+        self.found_data = found_data
+
     def generate_html(self, grants_data, output_file='grants.html'):
         # Check if the output file exists and delete it if it does
         if os.path.exists(output_file):
@@ -20,7 +23,7 @@ class HTMLGenerator:
             <title>Grant Details</title>
             <style>
                 table {{
-                    width: 300%; /* Make the table wider than the page */
+                    width: 100%; /* Adjusted table width */
                     border-collapse: collapse;
                     table-layout: fixed; /* Fixed table layout to manage column widths */
                 }}
@@ -33,12 +36,8 @@ class HTMLGenerator:
                 th {{
                     background-color: #f2f2f2;
                 }}
-                th:nth-child(1) {{ width: 2%; }} /* Number column */
-                th:nth-child(2) {{ width: 8%; }} /* Name column */
-                th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6) {{ width: 10%; }} /* Funds, Dates, Requirements, Documents columns */
-                th:nth-child(7) {{ width: 40%; }} /* Summary column */
-                th:nth-child(8) {{ width: 2%; }} /* Link column */
-                th:nth-child(9) {{ width: 8%; }} /* Query column */
+                th:nth-child(1) {{ width: 20%; }} /* Criteria column */
+                th:nth-child(2) {{ width: 80%; }} /* Links column */
                 .tabcontent {{
                     display: none;
                 }}
@@ -58,15 +57,8 @@ class HTMLGenerator:
                 <h2>New Links</h2>
                 <table>
                     <tr>
-                        <th>Number</th>
-                        <th>Name</th>
-                        <th>Funds</th>
-                        <th>Dates</th>
-                        <th>Requirements</th>
-                        <th>Documents</th>
-                        <th>Summary</th>
-                        <th>Link</th>
-                        <th>Query</th>
+                        <th>Criteria</th>
+                        <th>Links</th>
                     </tr>
                     {new_links_rows}
                 </table>
@@ -76,15 +68,8 @@ class HTMLGenerator:
                 <h2>Reviewed Links</h2>
                 <table>
                     <tr>
-                        <th>Number</th>
-                        <th>Name</th>
-                        <th>Funds</th>
-                        <th>Dates</th>
-                        <th>Requirements</th>
-                        <th>Documents</th>
-                        <th>Summary</th>
-                        <th>Link</th>
-                        <th>Query</th>
+                        <th>Criteria</th>
+                        <th>Links</th>
                     </tr>
                     {reviewed_links_rows}
                 </table>
@@ -114,36 +99,32 @@ class HTMLGenerator:
         """
 
         # Function to create rows HTML
-        def create_rows_html(grants_list):
+        def create_rows_html(data):
             rows_html = ""
-            for i, grant in enumerate(grants_list, start=1):
+            for criteria, links in data.items():
+                links_html = "<br>".join([f'<a href="{link}" target="_blank">{link}</a>' for link in links])
                 rows_html += f"""
                     <tr>
-                        <td>{i}</td>
-                        <td>{grant.get('name', 'N/A')}</td>
-                        <td>{grant.get('funds', 'N/A')}</td>
-                        <td>{grant.get('dates', 'N/A')}</td>
-                        <td>{grant.get('requirements', 'N/A')}</td>
-                        <td>{grant.get('documents', 'N/A')}</td>
-                        <td>{grant.get('summary', 'N/A')}</td>
-                        <td><a href="{grant.get('link', '#')}" target="_blank">Details</a></td>
-                        <td>{grant.get('query', 'N/A')}</td>
+                        <td>{criteria}</td>
+                        <td>{links_html}</td>
                     </tr>
                 """
             return rows_html
 
         # Categorize grants into new and reviewed
-        new_links_grants = []
-        reviewed_links_grants = []
-        for grant_id, grant in grants_data.items():
-            if grant['link'] in reviewed_links:
-                reviewed_links_grants.append(grant)
-            else:
-                new_links_grants.append(grant)
+        new_links_data = {}
+        reviewed_links_data = {}
+        for criteria, links in self.found_data.items():
+            new_links = [link for link in links if link not in reviewed_links]
+            reviewed_links = [link for link in links if link in reviewed_links]
+            if new_links:
+                new_links_data[criteria] = new_links
+            if reviewed_links:
+                reviewed_links_data[criteria] = reviewed_links
 
         # Create rows HTML for New and Reviewed Links
-        new_links_rows = create_rows_html(new_links_grants)
-        reviewed_links_rows = create_rows_html(reviewed_links_grants)
+        new_links_rows = create_rows_html(new_links_data)
+        reviewed_links_rows = create_rows_html(reviewed_links_data)
 
         # Format the HTML content with the rows
         html_content = html_content.format(new_links_rows=new_links_rows, reviewed_links_rows=reviewed_links_rows)
@@ -153,3 +134,5 @@ class HTMLGenerator:
             file.write(html_content)
 
         print(f"HTML file generated: {output_file}")
+
+
