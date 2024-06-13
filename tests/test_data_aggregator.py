@@ -1,9 +1,14 @@
 import unittest
-from unittest.mock import patch, mock_open, MagicMock
+from unittest.mock import patch, mock_open, MagicMock, call
 import json
 import os
 import logging
-from src.data_aggregator import DataAggregator
+import sys
+
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+from data_aggregator import DataAggregator
 
 class TestDataAggregator(unittest.TestCase):
 
@@ -28,7 +33,16 @@ class TestDataAggregator(unittest.TestCase):
         aggregator = DataAggregator('data/data.json')
         data = {'key': 'value'}
         aggregator.write_found_data(data)
-        mock_open().write.assert_called_once_with(json.dumps(data, indent=4))
+        expected_calls = [
+            call('{'),
+            call('\n    '),
+            call('"key"'),
+            call(': '),
+            call('"value"'),
+            call('\n'),
+            call('}')
+        ]
+        mock_open().write.assert_has_calls(expected_calls, any_order=False)
 
     @patch('builtins.open', new_callable=mock_open)
     def test_append_links_to_file(self, mock_open):
