@@ -14,6 +14,7 @@ def main():
         
         # Build the search query
         query_data = query_builder.get_query_data()
+        print("Query data:", query_data)
         
         # Execute the search and get PDF links
         links = search_executor.execute_search(query_data)
