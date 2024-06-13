@@ -17,7 +17,7 @@ class HTMLGenerator:
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Grant Details</title>
+            <title>Search Details</title>
             <style>
                 table {{
                     width: 100%; /* Adjusted table width */
@@ -44,7 +44,7 @@ class HTMLGenerator:
             </style>
         </head>
         <body onload="openTab(event, 'NewLinks')">
-            <h1>Grant Details</h1>
+            <h1>Search Details</h1>
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'NewLinks')">New Links</button>
                 <button class="tablinks" onclick="openTab(event, 'ReviewedLinks')">Reviewed Links</button>
