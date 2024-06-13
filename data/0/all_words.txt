@@ -1,5 +1,4 @@
-research
-grants
-seed
-pilot
-R&D
+apply
+deadline
+submit
+grant
