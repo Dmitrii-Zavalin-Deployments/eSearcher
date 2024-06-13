@@ -1,7 +1,7 @@
 import os
 
 class HTMLGenerator:
-    def generate_html(self, found_data, output_file='grants.html'):
+    def generate_html(self, found_data, output_file='information.html'):
         # Check if the output file exists and delete it if it does
         if os.path.exists(output_file):
             os.remove(output_file)
