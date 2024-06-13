@@ -1,10 +1,10 @@
 name: eSearcher
 
 on:
-  # push:
-  #   branches:
-  #     - main
-  #     - development
+  push:
+    branches:
+      - main
+      - development
   schedule:
     - cron: '*/30 * * * *' # Runs every 30 minutes
 
