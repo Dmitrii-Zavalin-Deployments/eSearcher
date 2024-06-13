@@ -1,10 +1,7 @@
 import os
 
 class HTMLGenerator:
-    def __init__(self, found_data):
-        self.found_data = found_data
-
-    def generate_html(self, grants_data, output_file='grants.html'):
+    def generate_html(self, found_data, output_file='grants.html'):
         # Check if the output file exists and delete it if it does
         if os.path.exists(output_file):
             os.remove(output_file)
@@ -114,7 +111,7 @@ class HTMLGenerator:
         # Categorize grants into new and reviewed
         new_links_data = {}
         reviewed_links_data = {}
-        for criteria, links in self.found_data.items():
+        for criteria, links in found_data.items():
             new_links = [link for link in links if link not in reviewed_links]
             reviewed_links = [link for link in links if link in reviewed_links]
             if new_links:

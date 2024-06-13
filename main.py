@@ -27,7 +27,7 @@ def main():
         print("Aggregated data:", found_data)
         
         # Generating HTML 
-        # html_generator.generate_html(found_data)
+        html_generator.generate_html(found_data)
     except Exception as e:
         print(f"An error occurred in main: {e}")
 
