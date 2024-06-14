@@ -41,7 +41,8 @@
         "Query exceeds 32 words (120 words). Please shorten the query.",
         "Query exceeds 32 words (130 words). Please shorten the query.",
         "Query exceeds 32 words (140 words). Please shorten the query.",
-        "Query exceeds 32 words (150 words). Please shorten the query."
+        "Query exceeds 32 words (150 words). Please shorten the query.",
+        "Query exceeds 32 words (160 words). Please shorten the query."
     ],
     "General grants search": [
         "https://ready2scale.eu/wp-content/uploads/2024/03/27.03.R2S_Open-call-guideline-for-applicants_20240326_final.pdf",
