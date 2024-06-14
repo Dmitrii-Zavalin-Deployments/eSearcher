@@ -16,7 +16,8 @@ class DataAggregator:
         file_path = f'data/{self.query_folder}/none_words.txt'
         with open(file_path, 'a') as file:
             for link in links:
-                file.write('\n' + link)
+                if "http://" in link or "https://" in link or "www" in link:
+                    file.write('\n' + link)
 
     def read_found_data(self):
         if os.path.exists(self.found_file_path) and os.path.getsize(self.found_file_path) > 0:

@@ -47,9 +47,14 @@ class TestDataAggregator(unittest.TestCase):
     @patch('builtins.open', new_callable=mock_open)
     def test_append_links_to_file(self, mock_open):
         aggregator = DataAggregator('data/data.json')
-        links = ['https://example.com']
+        links = ['https://example.com', 'http://example.org', 'www.example.net', 'example.com']
         aggregator.append_links_to_file(links)
-        mock_open().write.assert_called_once_with('\nhttps://example.com')
+        expected_calls = [
+            call('\nhttps://example.com'),
+            call('\nhttp://example.org'),
+            call('\nwww.example.net')
+        ]
+        mock_open().write.assert_has_calls(expected_calls, any_order=True)
 
     @patch('builtins.open', new_callable=mock_open, read_data='search_name')
     @patch('os.path.exists', return_value=True)
