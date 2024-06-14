@@ -79,6 +79,7 @@
         "Query exceeds 32 words (134 words). Please shorten the query.",
         "Query exceeds 32 words (144 words). Please shorten the query.",
         "Query exceeds 32 words (154 words). Please shorten the query.",
-        "Query exceeds 32 words (164 words). Please shorten the query."
+        "Query exceeds 32 words (164 words). Please shorten the query.",
+        "Query exceeds 32 words (174 words). Please shorten the query."
     ]
 }
