@@ -55,7 +55,7 @@ class HTMLGenerator:
                 <table>
                     <tr>
                         <th>Criteria</th>
-                        <th>Links</th>
+                        <th>Queries, Links, Comments</th>
                     </tr>
                     {new_links_rows}
                 </table>
@@ -66,7 +66,7 @@ class HTMLGenerator:
                 <table>
                     <tr>
                         <th>Criteria</th>
-                        <th>Links</th>
+                        <th>Queries, Links, Comments</th>
                     </tr>
                     {reviewed_links_rows}
                 </table>
