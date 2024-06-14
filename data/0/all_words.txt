@@ -1,4 +1,3 @@
-apply
-deadline
-submit
 grant
+funding
+opportunity
