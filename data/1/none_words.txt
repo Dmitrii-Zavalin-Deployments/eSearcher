@@ -39,3 +39,4 @@ Query exceeds 32 words (80 words). Please shorten the query.
 Query exceeds 32 words (90 words). Please shorten the query.
 Query exceeds 32 words (100 words). Please shorten the query.
 Query exceeds 32 words (110 words). Please shorten the query.
+Query exceeds 32 words (120 words). Please shorten the query.
