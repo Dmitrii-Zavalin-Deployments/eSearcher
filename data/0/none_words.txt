@@ -1,9 +1,6 @@
 university
 fellowship
-medical
-clinic
 health
-scholarship
 site:https://www.fema.gov/grants/preparedness/emergency-operations-center/fy-24-nofo
 site:https://www.hud.gov/program_offices/comm_planning/price
 site:https://www.ams.usda.gov/content/usda-extends-application-deadline-acer-fsmip-mgfsp-grant-programs
