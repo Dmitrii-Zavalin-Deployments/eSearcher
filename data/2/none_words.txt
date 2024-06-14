@@ -4,6 +4,7 @@ medical
 clinic
 health
 scholarship
+student
 site:https://www.ece.gov.nt.ca/sites/ece/files/resources/medium_arts_project_grant_application_guide.pdf
 site:https://www.victoria.ca/media/file/cultural-infrastructure-guidelines-2024
 site:https://www.alberta.ca/system/files/acsw-cg-front-office-user-guide.pdf
