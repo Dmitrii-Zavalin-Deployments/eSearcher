@@ -99,11 +99,16 @@ class HTMLGenerator:
         def create_rows_html(data):
             rows_html = ""
             for criteria, links in data.items():
-                links_html = "<br>".join([f'<a href="{link}" target="_blank">{link}</a>' for link in links])
+                links_html = ""
+                for link in links:
+                    if link.startswith(('http://', 'https://', 'www')):
+                        links_html += f'<a href="{link}" target="_blank">{link}</a><br>'
+                    else:
+                        links_html += f'{link}<br>'
                 rows_html += f"""
                     <tr>
                         <td>{criteria}</td>
-                        <td>{links_html}</td>
+                        <td>{links_html.rstrip('<br>')}</td>
                     </tr>
                 """
             return rows_html
@@ -131,5 +136,6 @@ class HTMLGenerator:
             file.write(html_content)
 
         print(f"HTML file generated: {output_file}")
+
 
 
