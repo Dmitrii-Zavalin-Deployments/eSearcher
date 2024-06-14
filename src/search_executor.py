@@ -25,14 +25,21 @@ class SearchExecutor:
                 response.raise_for_status()
                 results = response.json()
 
-                found_links = []
-                for item in results.get('items', []):
-                    found_links.append(item['link'])
+                # Initialize found_links with the query as the first element
+                found_links = [QUERY]
+
+                # Check if any items were found, if not, add a 'no links found' message
+                if not results.get('items'):
+                    found_links.append('No links found')
+                else:
+                    for item in results.get('items', []):
+                        found_links.append(item['link'])
 
                 return found_links
             except requests.exceptions.RequestException as e:
+                # Include the query and the error message in the return list
                 print(f"An error occurred in SearchExecutor: {e}")
-                return []
+                return [QUERY, f"An error occurred in SearchExecutor: {e}"]
         else:
             # Return a message if the query exceeds the word limit
             return [f"Query exceeds 32 words ({word_count} words). Please shorten the query."]
