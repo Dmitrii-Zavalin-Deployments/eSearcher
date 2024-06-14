@@ -21,7 +21,8 @@
         "https://www.citywindsor.ca/Documents/residents/planning/plans-and-community-information/major-projects/FCCIP%20Program%20Guide1.14.pdf",
         "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/initiatives-plans-strategies/internet-in-bc/connecting-communities-bc-application-docs/ccbc_faq_v2_2023dec15.pdf",
         "https://guelph.ca/wp-content/uploads/Tourism-Marketing-and-Material-Development-Fund-Application-Guide.pdf",
-        "https://scf.rncan.gc.ca/pubwarehouse/pdfs/41172.pdf"
+        "https://scf.rncan.gc.ca/pubwarehouse/pdfs/41172.pdf",
+        "Query exceeds 32 words (60 words). Please shorten the query."
     ],
     "General grants search internationally": [
         "grant funding opportunity \"application deadline\" submit apply -university -fellowship -medical -clinic -health -scholarship",
