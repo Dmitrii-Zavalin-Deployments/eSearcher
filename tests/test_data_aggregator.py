@@ -50,9 +50,9 @@ class TestDataAggregator(unittest.TestCase):
         links = ['https://example.com', 'http://example.org', 'www.example.net', 'example.com']
         aggregator.append_links_to_file(links)
         expected_calls = [
-            call('\nhttps://example.com'),
-            call('\nhttp://example.org'),
-            call('\nwww.example.net')
+            call('\nsite:https://example.com'),
+            call('\nsite:http://example.org'),
+            call('\nsite:www.example.net')
         ]
         mock_open().write.assert_has_calls(expected_calls, any_order=True)
 

@@ -17,7 +17,7 @@ class DataAggregator:
         with open(file_path, 'a') as file:
             for link in links:
                 if "http://" in link or "https://" in link or "www" in link:
-                    file.write('\n' + link)
+                    file.write('\nsite:' + link)
 
     def read_found_data(self):
         if os.path.exists(self.found_file_path) and os.path.getsize(self.found_file_path) > 0:
