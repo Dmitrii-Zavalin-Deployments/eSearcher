@@ -1,0 +1,88 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Search Details</title>
+            <style>
+                table {
+                    width: 100%; /* Adjusted table width */
+                    border-collapse: collapse;
+                    table-layout: fixed; /* Fixed table layout to manage column widths */
+                }
+                table, th, td {
+                    border: 1px solid black;
+                    padding: 10px;
+                    text-align: left;
+                    vertical-align: top; /* Align text to the top of the cell */
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                th:nth-child(1) { width: 20%; } /* Criteria column */
+                th:nth-child(2) { width: 80%; } /* Links column */
+                .tabcontent {
+                    display: none;
+                }
+                .active-tab {
+                    display: block;
+                }
+            </style>
+        </head>
+        <body onload="openTab(event, 'NewLinks')">
+            <h1>Search Details</h1>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'NewLinks')">New Links</button>
+                <button class="tablinks" onclick="openTab(event, 'ReviewedLinks')">Reviewed Links</button>
+            </div>
+
+            <div id="NewLinks" class="tabcontent">
+                <h2>New Links</h2>
+                <table>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Queries, Links, Comments</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Aerospace engineering post-master’s internationally</td>
+                        <td>scholarship international "post-master's" aerospace engineering -undergraduate -bachelor's -associate<br><a href="https://www.linkedin.com/posts/julie-lespagnol-70658258_iac2024-iafastro-aerospace-activity-7189350405732999169-NfFo" target="_blank">https://www.linkedin.com/posts/julie-lespagnol-70658258_iac2024-iafastro-aerospace-activity-7189350405732999169-NfFo</a><br><a href="https://origin-www2.princetonreview.com/grad/university-alabama-in-huntsville-9100706" target="_blank">https://origin-www2.princetonreview.com/grad/university-alabama-in-huntsville-9100706</a><br><a href="https://www.govinfo.gov/content/pkg/CFR-2000-title34-vol3/xml/CFR-2000-title34-vol3-part649.xml" target="_blank">https://www.govinfo.gov/content/pkg/CFR-2000-title34-vol3/xml/CFR-2000-title34-vol3-part649.xml</a><br><a href="https://www.postgraduatesearch.com/advice/application-help/five-questions-to-ask-at-a-postgraduate-interview/ap-62577/" target="_blank">https://www.postgraduatesearch.com/advice/application-help/five-questions-to-ask-at-a-postgraduate-interview/ap-62577/</a><br><a href="https://harborseals.org/tag/mbrp-2/" target="_blank">https://harborseals.org/tag/mbrp-2/</a><br><a href="https://issuu.com/messengerpapers/docs/islip_messenger_2024-0523" target="_blank">https://issuu.com/messengerpapers/docs/islip_messenger_2024-0523</a><br><a href="https://www.slideshare.net/slideshow/seminar-ppt-format-college-autosavedppt/266731594" target="_blank">https://www.slideshare.net/slideshow/seminar-ppt-format-college-autosavedppt/266731594</a><br><a href="http://www.sunrockice.com/expeditions_f.php?url=https://biotrans-opt.ru/9168435zfe43y" target="_blank">http://www.sunrockice.com/expeditions_f.php?url=https://biotrans-opt.ru/9168435zfe43y</a><br><a href="http://www.sunrockice.com/expeditions_f.php?url=https://biotrans-opt.ru/15497825rfe43a" target="_blank">http://www.sunrockice.com/expeditions_f.php?url=https://biotrans-opt.ru/15497825rfe43a</a</td>
+                    </tr>
+                
+                </table>
+            </div>
+
+            <div id="ReviewedLinks" class="tabcontent">
+                <h2>Reviewed Links</h2>
+                <table>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Queries, Links, Comments</th>
+                    </tr>
+                    
+                </table>
+            </div>
+
+            <script>
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].className = tabcontent[i].className.replace(" active-tab", "");
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).className += " active-tab";
+                    if (evt) evt.currentTarget.className += " active";
+                }
+                // Call openTab to set the default tab when the page loads
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    openTab(null, 'NewLinks');
+                });
+            </script>
+        </body>
+        </html>
+        
