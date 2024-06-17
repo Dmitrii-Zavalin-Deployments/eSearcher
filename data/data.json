@@ -150,7 +150,8 @@
         "https://www.boeing.com/space/starliner",
         "http://uac.gov.ua/en/",
         "https://libraries.psu.edu/databases",
-        "https://www.inspiraadvantage.com/blog/tmdsas-application"
+        "https://www.inspiraadvantage.com/blog/tmdsas-application",
+        "Query exceeds 32 words (38 words). Please shorten the query."
     ],
     "Early-stage technical research grants search in the World": [
         "grants research \"early-stage\" technology innovation technical -university -fellowship -health filetype:pdf",
