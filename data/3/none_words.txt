@@ -20,3 +20,13 @@ site:https://www.boeing.com/space/starliner
 site:http://uac.gov.ua/en/
 site:https://libraries.psu.edu/databases
 site:https://www.inspiraadvantage.com/blog/tmdsas-application
+site:https://cayuse.com/careers?gh_jid=7460246002
+site:https://careers.amnh.org/postings/4163/print_preview
+site:https://www.indeed.com/career-advice/finding-a-job/jobs-for-people-who-like-to-travel
+site:https://sunysccc.edu/index.html
+site:https://www.riken.jp/en/careers/researchers/20240611_1/index.html
+site:https://www.ecord.org/category/news/
+site:https://www.boeing.com/space/starliner
+site:http://uac.gov.ua/en/
+site:https://libraries.psu.edu/databases
+site:https://www.inspiraadvantage.com/blog/tmdsas-application
