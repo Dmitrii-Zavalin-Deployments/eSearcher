@@ -21,3 +21,13 @@ site:https://edc.nyc/sites/default/files/2024-03/3.21.24%20Info%20Session%20Deck
 site:https://climate.ec.europa.eu/document/download/1d480424-62bf-497b-a7f0-adf098e58e8f_en?filename=event_20240425_battery_presentation_en.pdf
 site:https://www.niaid.nih.gov/sites/default/files/P01-program-project-grants.pdf
 site:https://eitrawmaterials.eu/wp-content/uploads/2024/03/EIT-RawMaterials-Booster-Call-2024-Guidelines-1.pdf
+site:https://apply-for-innovation-funding.service.gov.uk/competition/1963/overview/9c7fa654-195d-4f94-b469-d351c3540f28
+site:https://south-korea-partnering-system.b2match.io/
+site:https://qt.eu/funding-opportunities/
+site:https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Publications/PPSER/NYSERDA/2024-Q1-Clean-Energy-Fund-Quarterly-Performance-Report.pdf
+site:https://www.eiturbanmobility.eu/wp-content/uploads/2024/05/BP23-25_Call_Manual_IRP-2024-2025_final-2-1.pdf
+site:https://www.eitmanufacturing.eu/wp-content/uploads/2024/05/eitm-accelerate-call-guidelines.pdf
+site:https://calmta.org/wp-content/uploads/sites/263/MTI-Advancement-Plan-Residential-HPWH-06122024.pdf
+site:https://www.eiturbanmobility.eu/wp-content/uploads/2024/05/29.05.2024-CFP-IRP-Info-Session.pdf
+site:https://govtribe.com/opportunity/federal-grant-opportunity/vision-open-2024-defoa0003387
+site:https://www.oxfordenergy.org/wpcms/wp-content/uploads/2024/06/2024-State-of-the-European-Hydrogen-Market-Report.pdf
