@@ -1,16 +1,51 @@
 import os
 
 class HTMLGenerator:
+    def __init__(self):
+        # Read the reviewed links once during initialization
+        self.reviewed_links = []
+        if os.path.exists('data/reviewed_links.txt'):
+            with open('data/reviewed_links.txt', 'r') as file:
+                self.reviewed_links = file.read().splitlines()
+
+    def create_rows_html(self, data):
+        rows_html = ""
+        for criteria, links in data.items():
+            links_html = ""
+            for link in links:
+                if link.startswith(('http://', 'https://', 'www')):
+                    links_html += f'<a href="{link}" target="_blank">{link}</a><br>'
+                else:
+                    links_html += f'{link}<br>'
+            rows_html += f"""
+                <tr>
+                    <td>{criteria}</td>
+                    <td>{links_html.rstrip('<br>')}</td>
+                </tr>
+            """
+        return rows_html
+
     def generate_html(self, found_data, output_file='information.html'):
         # Check if the output file exists and delete it if it does
         if os.path.exists(output_file):
             os.remove(output_file)
 
-        # Read the reviewed links
-        with open('data/reviewed_links.txt', 'r') as file:
-            reviewed_links = file.read().splitlines()
+        # Categorize links into new and reviewed
+        new_links_data = {}
+        reviewed_links_data = {}
+        for criteria, links in found_data.items():
+            new_links_list = [link for link in links if link not in self.reviewed_links]
+            reviewed_links_list = [link for link in links if link in self.reviewed_links]
+            if new_links_list:
+                new_links_data[criteria] = new_links_list
+            if reviewed_links_list:
+                reviewed_links_data[criteria] = reviewed_links_list
 
-        # Start of the HTML content
+        # Create rows HTML for New and Reviewed Links
+        new_links_rows = self.create_rows_html(new_links_data)
+        reviewed_links_rows = self.create_rows_html(reviewed_links_data)
+
+         # Start of the HTML content
         html_content = """
         <!DOCTYPE html>
         <html lang="en">
@@ -94,40 +129,7 @@ class HTMLGenerator:
         </body>
         </html>
         """
-
-        # Function to create rows HTML
-        def create_rows_html(data):
-            rows_html = ""
-            for criteria, links in data.items():
-                links_html = ""
-                for link in links:
-                    if link.startswith(('http://', 'https://', 'www')):
-                        links_html += f'<a href="{link}" target="_blank">{link}</a><br>'
-                    else:
-                        links_html += f'{link}<br>'
-                rows_html += f"""
-                    <tr>
-                        <td>{criteria}</td>
-                        <td>{links_html.rstrip('<br>')}</td>
-                    </tr>
-                """
-            return rows_html
-
-        # Categorize grants into new and reviewed
-        new_links_data = {}
-        reviewed_links_data = {}
-        for criteria, links in found_data.items():
-            new_links = [link for link in links if link not in reviewed_links]
-            reviewed_links = [link for link in links if link in reviewed_links]
-            if new_links:
-                new_links_data[criteria] = new_links
-            if reviewed_links:
-                reviewed_links_data[criteria] = reviewed_links
-
-        # Create rows HTML for New and Reviewed Links
-        new_links_rows = create_rows_html(new_links_data)
-        reviewed_links_rows = create_rows_html(reviewed_links_data)
-
+        
         # Format the HTML content with the rows
         html_content = html_content.format(new_links_rows=new_links_rows, reviewed_links_rows=reviewed_links_rows)
 
