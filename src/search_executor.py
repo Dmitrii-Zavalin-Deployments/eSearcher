@@ -13,11 +13,11 @@ class SearchExecutor:
 
         # Check if the query is within the 32-word limit
         if word_count <= 32:
-            # Calculate the date 4 months ago from today
-            some_months_ago = (datetime.now() - timedelta(days=4*30)).strftime('%Y%m%d')
+            # Calculate the date 1 month ago from today
+            some_months_ago = (datetime.now() - timedelta(days=1*30)).strftime('%Y%m%d')
             today = datetime.now().strftime('%Y%m%d')
 
-            # Update the URL to include the date range for the past 4 months
+            # Update the URL to include the date range for the past 1 month
             url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={QUERY}&sort=date:r:{some_months_ago}:{today}"
 
             try:
