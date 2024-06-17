@@ -45,8 +45,8 @@ class HTMLGenerator:
         new_links_rows = self.create_rows_html(new_links_data)
         reviewed_links_rows = self.create_rows_html(reviewed_links_data)
 
-        # Start of the HTML content
-        html_content = f"""
+         # Start of the HTML content
+        html_content = """
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -129,7 +129,7 @@ class HTMLGenerator:
         </body>
         </html>
         """
-
+        
         # Format the HTML content with the rows
         html_content = html_content.format(new_links_rows=new_links_rows, reviewed_links_rows=reviewed_links_rows)
 
