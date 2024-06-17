@@ -16,7 +16,8 @@ class DataAggregator:
         file_path = f'data/{self.query_folder}/none_words.txt'
         with open(file_path, 'a') as file:
             for link in links:
-                if "http://" in link or "https://" in link or "www" in link:
+                # Check if the link starts with "http://", "https://", or "www"
+                if link.startswith(("http://", "https://", "www")):
                     file.write('\nsite:' + link)
 
     def read_found_data(self):
