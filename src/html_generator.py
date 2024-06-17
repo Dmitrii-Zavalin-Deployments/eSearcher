@@ -55,21 +55,21 @@ class HTMLGenerator:
             <title>Search Details</title>
             <style>
                 table {{
-                    width: 100%;
+                    width: 100%; /* Adjusted table width */
                     border-collapse: collapse;
-                    table-layout: fixed;
+                    table-layout: fixed; /* Fixed table layout to manage column widths */
                 }}
                 table, th, td {{
                     border: 1px solid black;
                     padding: 10px;
                     text-align: left;
-                    vertical-align: top;
+                    vertical-align: top; /* Align text to the top of the cell */
                 }}
                 th {{
                     background-color: #f2f2f2;
                 }}
-                th:nth-child(1) {{ width: 20%; }}
-                th:nth-child(2) {{ width: 80%; }}
+                th:nth-child(1) {{ width: 20%; }} /* Criteria column */
+                th:nth-child(2) {{ width: 80%; }} /* Links column */
                 .tabcontent {{
                     display: none;
                 }}
