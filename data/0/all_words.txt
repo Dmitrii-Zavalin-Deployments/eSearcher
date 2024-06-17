@@ -1,2 +1,2 @@
-grants
+grant
 research
