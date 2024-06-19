@@ -3,3 +3,13 @@ defence
 clearance
 security
 citizenship
+site:https://www.ststechnicaljobs.com/aerospace-engineering-jobs/
+site:https://www.indeed.com/q-entry-level-aerospace-engineering-l-seattle,-wa-jobs.html
+site:https://www.mtu.edu/engineering/outreach/welcome/salary/
+site:https://www.indeed.com/q-entry-level-aerospace-engineering-l-houston,-tx-jobs.html
+site:https://ae.gatech.edu/fall-2024-ae-school-career-fair
+site:https://www.glassdoor.com/Job/china-aerospace-engineering-jobs-SRCH_IL.0,5_IN48_KO6,27.htm
+site:https://www.ziprecruiter.com/Jobs/Remote-Aerospace-Engineer
+site:https://ca.indeed.com/q-aerospace-engineer-l-ontario-jobs.html
+site:https://www.linkedin.com/company/st-aerospace-mobile-inc-
+site:https://www.engineering.com/jobs/aerospace-engineering/
