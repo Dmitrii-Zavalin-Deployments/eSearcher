@@ -13,3 +13,13 @@ site:https://www.ziprecruiter.com/Jobs/Remote-Aerospace-Engineer
 site:https://ca.indeed.com/q-aerospace-engineer-l-ontario-jobs.html
 site:https://www.linkedin.com/company/st-aerospace-mobile-inc-
 site:https://www.engineering.com/jobs/aerospace-engineering/
+site:https://www.indeed.com/q-entry-level-aerospace-engineering-l-phoenix,-az-jobs.html
+site:https://www.ziprecruiter.com/Jobs/Aerospace-Engineer/-in-Memphis,TN
+site:https://www.indeed.com/q-aerospace-engineering-phd-jobs.html
+site:https://ca.indeed.com/q-aerospace-engineer-l-ottawa,-on-jobs.html
+site:https://www.indeed.com/q-aerospace-engineer-l-mississippi-jobs.html
+site:https://www.payscale.com/research/US/Job=Aerospace_Engineer/Salary
+site:https://www.indeed.com/q-aerospace-engineer-l-albuquerque,-nm-jobs.html
+site:https://ca.indeed.com/q-aerospace-engineer-l-montr%C3%A9al,-qc-jobs.html
+site:https://mae.mst.edu/
+site:https://jobs.gecareers.com/aviation/global/en/ems
