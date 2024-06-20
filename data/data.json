@@ -160,7 +160,8 @@
         "https://www.indeed.com/q-aerospace-engineer-l-long-beach,-ca-jobs.html",
         "https://www.davron.net/jobs/category/HVAC-jobs/",
         "https://www.linkedin.com/company/barrios-technology",
-        "https://www.glassdoor.com/Salaries/new-york-city-aerospace-engineer-salary-SRCH_IL.0,13_IM615_KO14,32.htm"
+        "https://www.glassdoor.com/Salaries/new-york-city-aerospace-engineer-salary-SRCH_IL.0,13_IM615_KO14,32.htm",
+        "Query exceeds 32 words (38 words). Please shorten the query."
     ],
     "PhD Aerospace Research Programs": [
         "PhD aerospace space \"research-focused\"  biography  acceptance  \"flexible policy\"  \"standard recommendations\"",
