@@ -23,3 +23,13 @@ site:https://www.indeed.com/q-aerospace-engineer-l-albuquerque,-nm-jobs.html
 site:https://ca.indeed.com/q-aerospace-engineer-l-montr%C3%A9al,-qc-jobs.html
 site:https://mae.mst.edu/
 site:https://jobs.gecareers.com/aviation/global/en/ems
+site:https://www.indeed.com/q-aerospace-engineer-l-wichita,-ks-jobs.html
+site:https://www.ststechnicaljobs.com/
+site:https://www.indeed.com/q-aerospace-engineering-intern-l-california-jobs.html
+site:https://in.indeed.com/q-aerospace-engineering-l-tamil-nadu-jobs.html
+site:https://www.indeed.com/q-aerospace-engineer-l-south-carolina-jobs.html
+site:https://www.linkedin.com/company/spiritaero/jobs
+site:https://www.indeed.com/q-aerospace-engineer-l-long-beach,-ca-jobs.html
+site:https://www.davron.net/jobs/category/HVAC-jobs/
+site:https://www.linkedin.com/company/barrios-technology
+site:https://www.glassdoor.com/Salaries/new-york-city-aerospace-engineer-salary-SRCH_IL.0,13_IM615_KO14,32.htm
