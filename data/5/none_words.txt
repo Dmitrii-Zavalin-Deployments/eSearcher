@@ -7,3 +7,4 @@ site:https://www.shiksha.com/college/isbr-business-school-electronic-city-bangal
 site:https://admission.universitydunia.com/26832-nims-university/b-tech-aerospace-engineering
 site:https://www.shiksha.com/college/vlcc-institute-delhi-lajpat-nagar-27722
 site:https://www.linkedin.com/posts/akshaykumarsirsalewala_business-technology-ad-activity-7199401135001014272-_kD4
+site:https://www.shiksha.com/university/maharshi-dayanand-university-rohtak-20576/course-master-of-library-and-information-sciences-m-lib-i-sc-270944
