@@ -3,8 +3,8 @@
 # Pull the latest changes from the repository
 git pull
 
-# Add all changes to the staging area
-git add .
+# Add only the reviewed_links.txt file to the staging area
+git add data/reviewed_links.txt
 
 # Commit the changes with the specified message
 git commit -m "Added reviewed links"
