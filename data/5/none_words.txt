@@ -10,3 +10,4 @@ site:https://www.linkedin.com/posts/akshaykumarsirsalewala_business-technology-a
 site:https://www.shiksha.com/university/maharshi-dayanand-university-rohtak-20576/course-master-of-library-and-information-sciences-m-lib-i-sc-270944
 site:https://collegedunia.com/university/54797-amity-university-noida/master-of-business-administration-mba-full-time
 site:https://admission.universitydunia.com/21822-yadaiah-college-of-education/21822-67/yadaiah-college-of-education-ranking-courses-fees-cutoff-placement-scholarships
+site:https://bottegacrossfit.it/rvucom-mission
