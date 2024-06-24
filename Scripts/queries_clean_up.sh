@@ -18,27 +18,21 @@ cd "$(dirname "$0")" || { echo "Failed to navigate to the script's directory."; 
 # Log message indicating the start of the cleanup process
 echo "Starting cleanup process. Each query name should be on a new line in the file queries_to_clean_up.txt."
 
-# Set IFS to read line by line
-IFS=$'\n'
-
 # Read each query name from queries_to_clean_up.txt and process them
-while read -r QUERY_NAME; do
+while IFS= read -r QUERY_NAME; do
   # Log the query name being processed
   echo "Cleaning up query: $QUERY_NAME"
   
   # Use jq to update data.json for each query
-  jq --arg query_name "$QUERY_NAME" --arg date_time "$(date)" '.[$query_name] = ["This query was cleaned up at \($date_time)"]' ../data/data.json > temp.json && mv temp.json ../data/data.json
+  jq --arg query_name "$QUERY_NAME" --arg date_time "$(date)" '(.[$query_name] | select(. != null)) = ["This query was cleaned up at \($date_time)"]' ../data/data.json > temp.json && mv temp.json ../data/data.json
   
   # Check if the update was successful
   if [ $? -eq 0 ]; then
     echo "Successfully cleaned up query: $QUERY_NAME"
   else
-    echo "Failed to clean up query: $QUERY_NAME"
+    echo "Failed to clean up query: $QUERY_NAME. Please check if the query name exists in data.json and is correctly formatted."
   fi
 done < queries_to_clean_up.txt
-
-# Reset IFS to default
-unset IFS
 
 # Clear the queries_to_clean_up.txt file after processing all queries
 > queries_to_clean_up.txt
