@@ -9,8 +9,14 @@ cleanup() {
 # Trap SIGINT to call the cleanup function on script termination
 trap cleanup SIGINT
 
+# Stash any unstaged changes
+git stash push --include-untracked -m "Auto-stashed by cleanup script"
+
 # Pull the latest changes from the repository
 git pull --rebase origin main
+
+# Reapply the stashed changes
+git stash pop
 
 # Navigate to the parent directory of the script
 cd "$(dirname "$0")" || { echo "Failed to navigate to the script's directory."; exit 1; }
@@ -18,8 +24,11 @@ cd "$(dirname "$0")" || { echo "Failed to navigate to the script's directory."; 
 # Log message indicating the start of the cleanup process
 echo "Starting cleanup process. Each query name should be on a new line in the file queries_to_clean_up.txt."
 
+# Ensure the IFS (Internal Field Separator) is set to handle spaces properly
+IFS=$'\n'
+
 # Read each query name from queries_to_clean_up.txt and process them
-while IFS= read -r QUERY_NAME; do
+while read -r QUERY_NAME || [[ -n "$QUERY_NAME" ]]; do
   # Log the query name being processed
   echo "Cleaning up query: $QUERY_NAME"
   
@@ -33,6 +42,9 @@ while IFS= read -r QUERY_NAME; do
     echo "Failed to clean up query: $QUERY_NAME. Please check if the query name exists in data.json and is correctly formatted."
   fi
 done < queries_to_clean_up.txt
+
+# Reset IFS to default
+unset IFS
 
 # Clear the queries_to_clean_up.txt file after processing all queries
 > queries_to_clean_up.txt
