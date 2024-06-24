@@ -9,38 +9,25 @@ cleanup() {
 # Trap SIGINT to call the cleanup function on script termination
 trap cleanup SIGINT
 
-# Read the query name from queries_to_clean_up.txt
-QUERY_NAME=$(<queries_to_clean_up.txt)
-
 # Pull the latest changes from the repository
 git pull --rebase origin main
 
 # Navigate to the parent directory of the script
 cd "$(dirname "$0")" || { echo "Failed to navigate to the script's directory."; exit 1; }
 
-# Use jq to update data.json
-jq --arg query_name "$QUERY_NAME" --arg date_time "$(date)" '.[$query_name] = ["This query was cleaned up at \($date_time)"]' ../data/data.json > temp.json && mv temp.json ../data/data.json
+# Read each query name from queries_to_clean_up.txt and process them
+while IFS= read -r QUERY_NAME; do
+  # Use jq to update data.json for each query
+  jq --arg query_name "$QUERY_NAME" --arg date_time "$(date)" '.[$query_name] = ["This query was cleaned up at \($date_time)"]' ../data/data.json > temp.json && mv temp.json ../data/data.json
+done < queries_to_clean_up.txt
 
-# Clear the queries_to_clean_up.txt file
+# Clear the queries_to_clean_up.txt file after processing all queries
 > queries_to_clean_up.txt
 
-# Check if there are changes in the data.json file
-if git diff --quiet ../data/data.json; then
-  echo "No changes in data.json"
-else
-  git add ../data/data.json
-fi
-
-# Check if there are changes in the queries_to_clean_up.txt file
-if git diff --quiet queries_to_clean_up.txt; then
-  echo "No changes in queries_to_clean_up.txt"
-else
-  git add queries_to_clean_up.txt
-fi
-
-# Commit and push only if there were changes
-if ! git diff --staged --quiet; then
-  git commit -m "Cleaned up query: $QUERY_NAME"
+# Add, commit, and push changes if there were any
+if ! git diff --quiet ../data/data.json queries_to_clean_up.txt; then
+  git add ../data/data.json queries_to_clean_up.txt
+  git commit -m "Cleaned up queries"
   git push origin main
 else
   echo "No changes to commit."
