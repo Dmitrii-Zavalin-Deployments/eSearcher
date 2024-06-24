@@ -12,8 +12,16 @@ trap cleanup SIGINT
 # Pull the latest changes from the repository
 git pull --rebase origin main
 
+# Navigate to the directory above the current one, which should be the root of the repository
+cd "$(dirname "$0")"/.. || { echo "Failed to navigate to the root directory of the repository."; exit 1; }
+
 # Add only the reviewed_links.txt file to the staging area
-git add data/reviewed_links.txt
+if [ -f data/reviewed_links.txt ]; then
+  git add data/reviewed_links.txt
+else
+  echo "The file data/reviewed_links.txt does not exist."
+  exit 1
+fi
 
 # Check if there are any changes to commit
 if git diff --staged --quiet; then
