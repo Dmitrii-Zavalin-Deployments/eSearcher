@@ -12,8 +12,17 @@ trap cleanup SIGINT
 # Pull the latest changes from the repository
 git pull --rebase origin main
 
+# Navigate to the root directory of the repository where the data directory is located
+cd "$(dirname "$0")"/.. || { echo "Failed to navigate to the root directory of the repository."; exit 1; }
+
+# Check if the data directory exists
+if [ ! -d "data" ]; then
+  echo "Data directory not found. Exiting."
+  exit 1
+fi
+
 # Navigate to the data directory
-cd data || { echo "Data directory not found. Exiting."; exit 1; }
+cd data
 
 # Loop through each subfolder in the data directory
 for dir in */ ; do
