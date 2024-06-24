@@ -1,2 +1,12 @@
 volunteer
 internship
+site:https://www.indeed.com/m/jobs?q=Expedition&l=Remote
+site:https://www.britannica.com/biography/James-Cook
+site:https://www.ziprecruiter.com/c/Medix/Job/Medical-Assistant-&-Secretary-Openings-(Multiple-Locations!)/-in-Cambridge,MA?jid=23da8c8995909943
+site:https://en.wikipedia.org/wiki/Ernest_Shackleton
+site:https://achievement.org/achiever/robert-d-ballard-ph-d/
+site:https://www.cnr.it/en
+site:https://members.linnean.org/events/66265a5076035a00089ae6d0/description
+site:https://www.sciencelearn.org.nz/events/2599-innovative-young-minds-2024
+site:https://www.alamy.com/stock-photo/human-positions.html
+site:https://guides.loc.gov/feminism-french-women-history/19th-century
