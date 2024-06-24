@@ -11,3 +11,5 @@ site:https://www.shiksha.com/university/maharshi-dayanand-university-rohtak-2057
 site:https://collegedunia.com/university/54797-amity-university-noida/master-of-business-administration-mba-full-time
 site:https://admission.universitydunia.com/21822-yadaiah-college-of-education/21822-67/yadaiah-college-of-education-ranking-courses-fees-cutoff-placement-scholarships
 site:https://bottegacrossfit.it/rvucom-mission
+site:https://www.shiksha.com/studyabroad/netherlands/universities/maastricht-university/msc-globalisation-and-law
+site:https://collegedunia.com/university/25810-indian-institute-of-management-iimu-udaipur
