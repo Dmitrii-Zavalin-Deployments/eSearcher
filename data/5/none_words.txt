@@ -13,3 +13,4 @@ site:https://admission.universitydunia.com/21822-yadaiah-college-of-education/21
 site:https://bottegacrossfit.it/rvucom-mission
 site:https://www.shiksha.com/studyabroad/netherlands/universities/maastricht-university/msc-globalisation-and-law
 site:https://collegedunia.com/university/25810-indian-institute-of-management-iimu-udaipur
+site:https://llm-guide.com/schools/europe/belgium/katholieke-universiteit-leuven-ku-leuven-centre-for-ip-it-law
