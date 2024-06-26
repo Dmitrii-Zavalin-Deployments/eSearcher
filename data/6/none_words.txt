@@ -1,3 +1,5 @@
 biography
 undergraduate
 policy
+site:https://www.nilai.edu.my/sites/default/files/school/brochure/AirCraft%202024%2012_CO%28FA%29.pdf
+site:https://www3.ntu.edu.sg/oad2/GA_CW/CWVerificationDetails.pdf
