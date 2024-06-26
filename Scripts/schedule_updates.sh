@@ -44,6 +44,25 @@ run_script() {
   done
 }
 
+# Function to handle interrupts and run specific code before exiting
+cleanup() {
+  echo "Interrupt received, running cleanup scripts..."
+  # Run the reviewed_links_update.sh script
+  run_script "./reviewed_links_update.sh"
+
+  # Run the update_search_queries.sh script
+  run_script "./update_search_queries.sh"
+
+  # Run the queries_clean_up.sh script
+  run_script "./queries_clean_up.sh"
+
+  echo "Cleanup complete. Exiting now."
+  exit 0
+}
+
+# Trap Ctrl+C (SIGINT) and Ctrl+D (EOF/SIGTERM) to run the cleanup function
+trap cleanup SIGINT SIGTERM
+
 # Main loop
 while true; do
   # Run the reviewed_links_update.sh script
