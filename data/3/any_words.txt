@@ -1,2 +1,4 @@
-paid
-positions
+jobs
+employment
+opportunities
+"apply now"
