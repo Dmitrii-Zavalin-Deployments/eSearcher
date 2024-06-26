@@ -2,3 +2,11 @@ university
 fellowship
 health
 consortium
+site:https://www.csub.edu/grasp/_files/SCIENCE-TECHNOLOGY-ENGINEERING-MATH.pdf
+site:https://science.osti.gov/-/media/grants/pdf/foas-resources/2024/HEP-QuantISED-20-Webinar.pdf
+site:https://ndlc.org/DocumentCenter/View/4333/Economic-Development-ND-Department-of-Commerce
+site:https://www.ca4.uscourts.gov/opinions/222075.P.pdf
+site:https://www.ictworks.org/wp-content/uploads/2024/06/FCDO-tech-pilots-RFP.pdf
+site:https://www.shapingbio.eu/media/pe5jzm4e/country-file-czechrepublica4.pdf
+site:https://www.dodsbirsttr.mil/submissions/api/public/download?uploadId=MTQyNDA4MA==&showOnWeb=true&fileName=DARPA_SBIR_244_R3.pdf
+site:https://ies.ed.gov/funding/pdf/2025_84305I.pdf
