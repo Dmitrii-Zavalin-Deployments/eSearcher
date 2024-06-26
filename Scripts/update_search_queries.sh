@@ -9,8 +9,14 @@ cleanup() {
 # Trap SIGINT to call the cleanup function on script termination
 trap cleanup SIGINT
 
+# Stash any unstaged changes
+git stash push --include-untracked -m "Auto-stashed by cleanup script"
+
 # Pull the latest changes from the repository
 git pull --rebase origin main
+
+# Reapply the stashed changes
+git stash pop
 
 # Navigate to the root directory of the repository where the data directory is located
 cd "$(dirname "$0")"/.. || { echo "Failed to navigate to the root directory of the repository."; exit 1; }
