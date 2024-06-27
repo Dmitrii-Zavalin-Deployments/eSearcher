@@ -1,4 +1,2 @@
 grants
-funding
-opportunities
-apply
+research
