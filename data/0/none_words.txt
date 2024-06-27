@@ -2,3 +2,9 @@ university
 fellowship
 health
 consortium
+site:https://www.ictworks.org/wp-content/uploads/2024/06/FCDO-tech-pilots-RFP.pdf
+site:https://www.dodsbirsttr.mil/submissions/api/public/download?uploadId=MTQyNDA4MA==&showOnWeb=true&fileName=DARPA_SBIR_244_R3.pdf
+site:https://autm.net/AUTM/media/About-Tech-Transfer/Documents/AUTM-Comments-on-Docket-No-PTO-P-2023-004.pdf
+site:https://ndlc.org/DocumentCenter/View/4333/Economic-Development-ND-Department-of-Commerce
+site:https://www.iztech.pl/wp-content/uploads/2024/06/IZTECH_Position_Paper_10thFP.pdf
+site:http://iros2024-abudhabi.org/assets/Call-for-IROS-Awards-Nomination.pdf
