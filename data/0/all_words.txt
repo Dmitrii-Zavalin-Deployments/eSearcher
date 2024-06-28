@@ -1,2 +1,1 @@
-grants
-research
+grants "technical research" (funding OR opportunities) early-stage
