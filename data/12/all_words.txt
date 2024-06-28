@@ -1,0 +1,1 @@
+("HORIZON-CL4" OR "HORIZON-CL5" OR "HORIZON-CL6") AND ("Type of action * Innovation" OR "Type of action * Research")
