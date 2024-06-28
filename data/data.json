@@ -813,5 +813,12 @@
         "This query was cleaned up at Fri Jun 28 14:56:48 ADT 2024",
         "\"grants for publishers\" OR \"writing grants\" OR \"publishing grants\" individual global OR international OR worldwide \"grants for writers\" -contest -for-organizations -for-nonprofits",
         "No links found"
+    ],
+    "Research grants from the Pillar 2 of the Horizon Europe programme": [
+        "(\"HORIZON-CL4\" OR \"HORIZON-CL5\" OR \"HORIZON-CL6\") AND (\"Type of action * Innovation\" OR \"Type of action * Research\") \"Open For Submission\" site:ec.europa.eu",
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?callIdentifier=HORIZON-CL6-2024-CLIMATE-02",
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?order=DESC&pageNumber=1&pageSize=50&sortBy=startDate&status=31094501,31094502&frameworkProgramme=43108390&crossCuttingPriorities=PART-COPROGR",
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?order=DESC&pageNumber=1&pageSize=50&sortBy=startDate&isExactMatch=true&status=31094502&frameworkProgramme=43108390&callIdentifier=HORIZON-CL5-2024-D2-02",
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?order=DESC&pageNumber=1&pageSize=50&sortBy=startDate&keywords=HORIZON-CL4-2024-DIGITAL-EMERGING-02&isExactMatch=true&status=31094501,31094502,31094503&callIdentifier=HORIZON-CL4-2024-DIGITAL-EMERGING-02"
     ]
 }
