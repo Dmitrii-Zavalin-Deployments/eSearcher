@@ -11,7 +11,18 @@
         "https://www.globaltreksandadventures.com/",
         "https://www.hurtigruten.com/en/expeditions/careers/",
         "https://www.jobtrees.com/postid/01e863d7f6212768f512a879cd007237",
-        "https://www.hurtigruten.com/en-us/expeditions/careers/"
+        "https://www.hurtigruten.com/en-us/expeditions/careers/",
+        "jobs \"expeditions\" (paying OR employment OR opportunities) -unpaid -volunteer -site:https://www.indeed.com/q-geographic-expeditions-jobs.html -site:https://aq.indeed.com/q-logistics-jobs.html -site:https://www.disneycareers.com/en/job/celebration/adventure-guide-adventures-and-expeditions-casual-temporary-seasonal/391/66849795632 -site:https://www.glassdoor.com/Salary/Lindblad-Expeditions-Salaries-E152848_P3.htm -site:https://www.disneycareers.com/en/job/celebration/business-integration-coordinator-adventures-and-expeditions/391/66241813280 -site:https://alpenglowexpeditions.com/ -site:https://www.globaltreksandadventures.com/ -site:https://www.hurtigruten.com/en/expeditions/careers/ -site:https://www.jobtrees.com/postid/01e863d7f6212768f512a879cd007237 -site:https://www.hurtigruten.com/en-us/expeditions/careers/",
+        "https://www.indeed.com/q-lindblad-expeditions-lindblad-expeditions-jobs.html",
+        "https://jobs.disneycareers.com/job/celebration/business-integration-coordinator-adventures-and-expeditions/391/66241813280",
+        "https://www.indeed.com/q-wilderness-expedition-jobs.html",
+        "https://jobs.disneycareers.com/job/celebration/adventure-guide-adventures-and-expeditions-casual-temporary-seasonal/391/66849795632",
+        "https://www.hurtigruten.com/en-au/expeditions/careers/",
+        "https://www.expeditions.com/",
+        "https://en.wikipedia.org/wiki/Jeff_Bezos",
+        "https://www.disneycareers.com/en/employment/united-states-operations-jobs/391/70122/6252001/2",
+        "https://www.randstad.com/jobs/expeditions-manager-eventos_lisboa_43742110/",
+        "https://jobs.lever.co/lindblad-expeditions/cdbe66eb-cef2-407d-abc4-04a2670ad8c8/apply"
     ],
     "Early-stage technical research grants search in the World": [
         "This query was cleaned up at Thu Jun 27 16:46:09 ADT 2024",
