@@ -1,2 +1,12 @@
 unpaid
 volunteer
+site:https://www.indeed.com/q-geographic-expeditions-jobs.html
+site:https://aq.indeed.com/q-logistics-jobs.html
+site:https://www.disneycareers.com/en/job/celebration/adventure-guide-adventures-and-expeditions-casual-temporary-seasonal/391/66849795632
+site:https://www.glassdoor.com/Salary/Lindblad-Expeditions-Salaries-E152848_P3.htm
+site:https://www.disneycareers.com/en/job/celebration/business-integration-coordinator-adventures-and-expeditions/391/66241813280
+site:https://alpenglowexpeditions.com/
+site:https://www.globaltreksandadventures.com/
+site:https://www.hurtigruten.com/en/expeditions/careers/
+site:https://www.jobtrees.com/postid/01e863d7f6212768f512a879cd007237
+site:https://www.hurtigruten.com/en-us/expeditions/careers/
