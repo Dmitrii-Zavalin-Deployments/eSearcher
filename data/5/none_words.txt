@@ -8,3 +8,4 @@ site:https://www.shiksha.com/college/srishti-manipal-institute-of-art-design-and
 site:https://collegedunia.com/courses/master-of-science-msc-microbiology
 site:https://www.shiksha.com/college/psg-college-of-arts-and-science-psgcas-coimbatore-1855/course-postgraduate-diploma-in-business-management-1116271
 site:https://www.shiksha.com/college/makhanlal-chaturvedi-national-university-of-journalism-and-communication-rewa-campus-182397/course-postgraduate-diploma-in-computer-application-pgdca-916549
+site:https://llm-guide.com/schools/europe/concentration/intellectual-property-ip-law
