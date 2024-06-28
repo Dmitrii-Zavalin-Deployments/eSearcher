@@ -1,0 +1,11 @@
+
+site:https://www.nidcd.nih.gov/training/fellowship-awards
+site:https://www.federalgrants.com/NSF-Small-Business-Innovation-Research-Small-Business-Technology-Transfer-Fast-Track-Pilot-Programs-100914.html
+site:https://pitchbob.io/blog/top-230-grants-and-investment-programs-for-startups
+site:https://vasquez.house.gov/sites/evo-subsites/vasquez.house.gov/files/evo-media-document/community-project-funding-resource-guide-1.pdf
+site:https://www.opalesque.com/
+site:https://waynetalent.csod.com/ux/ats/careersite/2/home/requisition/2045?c=waynetalent
+site:https://www.mentorworks.ca/government-funding/
+site:https://www.radboudumc.nl/en/news-items/2024/rubicon-grants-for-research-on-brain-cells-and-sleep-in-alzheimer%E2%80%99s
+site:https://arpa-e-foa.energy.gov/Default.aspx?Search=RFI&SearchType=
+site:https://www.highergov.com/grant/S21MD018975/
