@@ -17,3 +17,11 @@ site:https://www.shiksha.com/university/jamia-millia-islamia-delhi-843/courses/p
 site:https://www.in.gov/ilea/training/off-site-training/
 site:https://collegedunia.com/university/59283-quantum-university-roorkee/courses-fees
 site:https://pk.linkedin.com/school/nustofficial/
+site:https://www.linkedin.com/in/marcusdibattista
+site:http://www.hccs.edu/programs/areas-of-study/public-safety-transportation--consumer-services/pastry-arts/
+site:https://www.shiksha.com/studyabroad/usa/universities/university-of-houston/courses/barch-bc
+site:https://news.slashdot.org/story/24/06/23/2047235/michigan-lawmakers-advance-bill-requiring-all-public-high-schools-to-at-least-offer-cs
+site:https://www.shiksha.com/university/jamia-millia-islamia-delhi-843/courses/pg-diploma-bc
+site:https://www.in.gov/ilea/training/off-site-training/
+site:https://collegedunia.com/university/59283-quantum-university-roorkee/courses-fees
+site:https://pk.linkedin.com/school/nustofficial/
