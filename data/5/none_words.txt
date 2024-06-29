@@ -1,1 +1,11 @@
 undergraduate
+site:https://libguides.nps.edu/citation/apa
+site:https://llm-guide.com/schools/europe
+site:https://masters.au.dk/electrical-engineering-msc-in-engineering
+site:https://www.uwa.edu.au/study/courses/master-of-laws
+site:https://llm-guide.com/schools/europe/concentration/alternative-dispute-resolution-arbitration-mediation
+site:https://www.postgraduatesearch.com/pgs/search?course=astronomy-and-space-science&location=bristol
+site:https://www.northtec.ac.nz/study
+site:http://hkuspace.hku.hk/prog/postgrad-dip-in-finance-and-data-analytics
+site:https://www.bbcmaestro.com/
+site:https://trafford.tscg.ac.uk/our-courses/
