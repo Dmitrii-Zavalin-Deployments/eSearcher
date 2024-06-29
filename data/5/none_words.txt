@@ -9,3 +9,9 @@ site:https://www.northtec.ac.nz/study
 site:http://hkuspace.hku.hk/prog/postgrad-dip-in-finance-and-data-analytics
 site:https://www.bbcmaestro.com/
 site:https://trafford.tscg.ac.uk/our-courses/
+site:https://www.northtec.ac.nz/study
+site:http://hkuspace.hku.hk/prog/postgrad-dip-in-finance-and-data-analytics
+site:https://www.bbcmaestro.com/
+site:https://trafford.tscg.ac.uk/our-courses/
+site:https://www.shiksha.com/college/b-k-school-of-professional-and-management-studies-navrangpura-ahmedabad-24660/courses/pg-diploma-bc
+site:https://collegedunia.com/courses/master-of-business-administration-mba-aviation-management
