@@ -9,3 +9,13 @@ site:https://www.mentorworks.ca/government-funding/
 site:https://www.radboudumc.nl/en/news-items/2024/rubicon-grants-for-research-on-brain-cells-and-sleep-in-alzheimer%E2%80%99s
 site:https://arpa-e-foa.energy.gov/Default.aspx?Search=RFI&SearchType=
 site:https://www.highergov.com/grant/S21MD018975/
+site:https://new.nsf.gov/funding/opportunities/nsf-small-business-innovation-research-small-1/nsf24-582/solicitation
+site:https://www.highergov.com/grant/S21MD018975/
+site:https://new.nsf.gov/funding/opportunities/nsf-small-business-innovation-research-small-1
+site:https://jobs.montana.edu/postings/42125
+site:https://www.nigms.nih.gov/training/Lists/TWD_Dashboard/DispForm.aspx?ID=253425&ContentTypeId=0x0100E2B5D7594A1BAB4497ACFC8BE7301259
+site:https://cra.org/govaffairs/blog/
+site:https://eere-exchange.energy.gov/Default.aspx?Search=tribal&amp;SearchType=
+site:https://www.iedconline.org/career-opportunities/
+site:https://www.ugc.edu.hk/doc/eng/rgc/form/GRF2.pdf
+site:https://vet.ucalgary.ca/vetnet/resources/research-funding-opportunities-events
