@@ -22,7 +22,18 @@
         "https://en.wikipedia.org/wiki/Jeff_Bezos",
         "https://www.disneycareers.com/en/employment/united-states-operations-jobs/391/70122/6252001/2",
         "https://www.randstad.com/jobs/expeditions-manager-eventos_lisboa_43742110/",
-        "https://jobs.lever.co/lindblad-expeditions/cdbe66eb-cef2-407d-abc4-04a2670ad8c8/apply"
+        "https://jobs.lever.co/lindblad-expeditions/cdbe66eb-cef2-407d-abc4-04a2670ad8c8/apply",
+        "jobs \"expeditions\" (paying OR employment OR opportunities) -unpaid -volunteer -site:https://www.indeed.com/q-geographic-expeditions-jobs.html -site:https://aq.indeed.com/q-logistics-jobs.html -site:https://www.disneycareers.com/en/job/celebration/adventure-guide-adventures-and-expeditions-casual-temporary-seasonal/391/66849795632 -site:https://www.glassdoor.com/Salary/Lindblad-Expeditions-Salaries-E152848_P3.htm -site:https://www.disneycareers.com/en/job/celebration/business-integration-coordinator-adventures-and-expeditions/391/66241813280 -site:https://alpenglowexpeditions.com/ -site:https://www.globaltreksandadventures.com/ -site:https://www.hurtigruten.com/en/expeditions/careers/ -site:https://www.jobtrees.com/postid/01e863d7f6212768f512a879cd007237 -site:https://www.hurtigruten.com/en-us/expeditions/careers/ -site:https://www.indeed.com/q-lindblad-expeditions-lindblad-expeditions-jobs.html -site:https://jobs.disneycareers.com/job/celebration/business-integration-coordinator-adventures-and-expeditions/391/66241813280 -site:https://www.indeed.com/q-wilderness-expedition-jobs.html -site:https://jobs.disneycareers.com/job/celebration/adventure-guide-adventures-and-expeditions-casual-temporary-seasonal/391/66849795632 -site:https://www.hurtigruten.com/en-au/expeditions/careers/ -site:https://www.expeditions.com/ -site:https://en.wikipedia.org/wiki/Jeff_Bezos -site:https://www.disneycareers.com/en/employment/united-states-operations-jobs/391/70122/6252001/2 -site:https://www.randstad.com/jobs/expeditions-manager-eventos_lisboa_43742110/ -site:https://jobs.lever.co/lindblad-expeditions/cdbe66eb-cef2-407d-abc4-04a2670ad8c8/apply",
+        "https://www.hurtigruten.com/group/people/",
+        "https://www.indeed.com/m/jobs?q=Expedition+Travel",
+        "https://www.glassdoor.com/job-listing/business-integration-coordinator-adventures-expeditions-disney-JV_IC1166257_KO0,55_KE56,62.htm?jl=1009317269558",
+        "https://www.indeed.com/m/jobs?q=Expedition+Crew",
+        "https://jobs.disneycareers.com/abd-jobs",
+        "https://jobs.lever.co/lindblad-expeditions/df354c1f-fc9c-4fb5-9f84-49e2f6fc5980/apply",
+        "https://www.opwall.com/expeditions/field-course/field-skills-5-days/",
+        "https://www.linkedin.com/jobs/view/director-of-fp-a-strategic-finance-at-lindblad-expeditions-3947091920",
+        "https://cateringekero.se/list/job/remote-administrativecustomer-service-at-enchanted-expeditions-miami-fl-QStvQVlNQ2hNcHl1WXJsZDhIYVRyMVRhR2c9PQ==",
+        "https://www.ziprecruiter.com/c/Lindblad-Expeditions/Job/Director,-Sales-Operations-and-Business-Development/-in-Orlando,FL?jid=f30a635c56cd9b34"
     ],
     "Early-stage technical research grants search in the World": [
         "This query was cleaned up at Thu Jun 27 16:46:09 ADT 2024",
