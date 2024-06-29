@@ -11,3 +11,4 @@ site:https://www.tles.tyc.edu.tw/instpage.php?=LoginId%2CLogoffReason%2CPunchTim
 site:https://origin-www2.princetonreview.com/grad/university-maryland-college-park-9163286?program=30.1401
 site:https://origin-www2.princetonreview.com/grad/university-maryland-college-park-9163286?program=30.1401
 site:https://origin-www2.princetonreview.com/grad/university-maryland-college-park-9163286?program=30.1401
+site:https://origin-www2.princetonreview.com/grad/university-maryland-college-park-9163286?program=30.1401
