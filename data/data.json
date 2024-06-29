@@ -90,7 +90,18 @@
         "https://eere-exchange.energy.gov/Default.aspx?Search=tribal&amp;SearchType=",
         "https://www.iedconline.org/career-opportunities/",
         "https://www.ugc.edu.hk/doc/eng/rgc/form/GRF2.pdf",
-        "https://vet.ucalgary.ca/vetnet/resources/research-funding-opportunities-events"
+        "https://vet.ucalgary.ca/vetnet/resources/research-funding-opportunities-events",
+        "grants \"technical research\" (funding OR opportunities) early-stage - -site:https://www.nidcd.nih.gov/training/fellowship-awards -site:https://www.federalgrants.com/NSF-Small-Business-Innovation-Research-Small-Business-Technology-Transfer-Fast-Track-Pilot-Programs-100914.html -site:https://pitchbob.io/blog/top-230-grants-and-investment-programs-for-startups -site:https://vasquez.house.gov/sites/evo-subsites/vasquez.house.gov/files/evo-media-document/community-project-funding-resource-guide-1.pdf -site:https://www.opalesque.com/ -site:https://waynetalent.csod.com/ux/ats/careersite/2/home/requisition/2045?c=waynetalent -site:https://www.mentorworks.ca/government-funding/ -site:https://www.radboudumc.nl/en/news-items/2024/rubicon-grants-for-research-on-brain-cells-and-sleep-in-alzheimer%E2%80%99s -site:https://arpa-e-foa.energy.gov/Default.aspx?Search=RFI&SearchType= -site:https://www.highergov.com/grant/S21MD018975/ -site:https://new.nsf.gov/funding/opportunities/nsf-small-business-innovation-research-small-1/nsf24-582/solicitation -site:https://www.highergov.com/grant/S21MD018975/ -site:https://new.nsf.gov/funding/opportunities/nsf-small-business-innovation-research-small-1 -site:https://jobs.montana.edu/postings/42125 -site:https://www.nigms.nih.gov/training/Lists/TWD_Dashboard/DispForm.aspx?ID=253425&ContentTypeId=0x0100E2B5D7594A1BAB4497ACFC8BE7301259 -site:https://cra.org/govaffairs/blog/ -site:https://eere-exchange.energy.gov/Default.aspx?Search=tribal&amp;SearchType= -site:https://www.iedconline.org/career-opportunities/ -site:https://www.ugc.edu.hk/doc/eng/rgc/form/GRF2.pdf -site:https://vet.ucalgary.ca/vetnet/resources/research-funding-opportunities-events",
+        "https://new.nsf.gov/funding/opportunities/nsf-small-business-innovation-research-small-1/nsf24-582/solicitation",
+        "https://www.highergov.com/grant/S21MD018975/",
+        "https://new.nsf.gov/funding/opportunities/nsf-small-business-innovation-research-small-1",
+        "https://jobs.montana.edu/postings/42125",
+        "https://www.nigms.nih.gov/training/Lists/TWD_Dashboard/DispForm.aspx?ID=253425&ContentTypeId=0x0100E2B5D7594A1BAB4497ACFC8BE7301259",
+        "https://cra.org/govaffairs/blog/",
+        "https://eere-exchange.energy.gov/Default.aspx?Search=tribal&SearchType=",
+        "https://www.cfraresearch.com/",
+        "https://www.iedconline.org/career-opportunities/",
+        "https://www.ugc.edu.hk/doc/eng/rgc/form/GRF2.pdf"
     ],
     "1-Year Postgraduate Aerospace Research Programs": [
         "This query was cleaned up at Fri 28 Jun 2024 10:19:54 PM ADT",
