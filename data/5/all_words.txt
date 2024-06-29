@@ -1,3 +1,1 @@
-aerospace
-research
-programs
+postgraduate aerospace research "1-Year" (programs OR courses)
