@@ -1,4 +1,1 @@
-aerospace
-graduate
-program
-apply
+graduate aerospace programs "1-Year" (courses OR degrees)
