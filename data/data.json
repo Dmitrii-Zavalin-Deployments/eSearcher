@@ -805,6 +805,7 @@
         "https://www.alpineascents.com/climbs/mount-everest/",
         "https://supnorway.com/",
         "https://www.yelp.com/biz/geographic-expeditions-indianapolis",
-        "https://www.nationalgeographic.com/travel"
+        "https://www.nationalgeographic.com/travel",
+        "Query exceeds 32 words (34 words). Please shorten the query."
     ]
 }
