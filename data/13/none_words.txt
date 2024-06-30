@@ -19,3 +19,13 @@ site:https://www.lonelyplanet.com/
 site:https://www.dice.com/job-detail/8e1d1950-febb-42d8-9604-2a8e815c8687
 site:https://en.wikipedia.org/wiki/William_Beebe
 site:https://jobs.antarctica.gov.au/
+site:https://www.indeed.com/q-adventure-expedition-guide-jobs.html
+site:https://www.wendyperrin.com/reviews/ashton-palmer/
+site:https://www.indeed.com/viewjob?jk=2d71ab687af027d0
+site:https://www.hurtigruten.com/group/people/
+site:https://www.alpineascents.com/
+site:https://sea-quest-kayak.com/
+site:https://www.alpineascents.com/climbs/mount-everest/
+site:https://supnorway.com/
+site:https://www.yelp.com/biz/geographic-expeditions-indianapolis
+site:https://www.nationalgeographic.com/travel
