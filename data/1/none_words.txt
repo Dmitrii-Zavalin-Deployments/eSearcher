@@ -19,3 +19,4 @@ site:https://www.shiksha.com/studyabroad/usa/universities/ohio-state-university/
 site:https://www.shiksha.com/studyabroad/usa/universities/ohio-state-university/courses/phd-bc
 site:https://www.shiksha.com/studyabroad/usa/universities/ohio-state-university/courses/phd-bc
 site:https://www.shiksha.com/studyabroad/usa/universities/ohio-state-university/courses/phd-bc
+site:https://www.shiksha.com/studyabroad/usa/universities/ohio-state-university/courses/phd-bc
