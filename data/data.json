@@ -6055,7 +6055,9 @@
         "\"grants for publishers\" OR \"writing grants\" OR \"publishing grants\" individual global OR international OR worldwide \"grants for writers\" -contest -for-organizations -for-nonprofits",
         "No links found",
         "\"grants for publishers\" OR \"writing grants\" OR \"publishing grants\" individual global OR international OR worldwide \"grants for writers\" -contest -for-organizations -for-nonprofits",
-        "No links found"
+        "No links found",
+        "\"grants for publishers\" OR \"writing grants\" OR \"publishing grants\" individual global OR international OR worldwide \"grants for writers\" -contest -for-organizations -for-nonprofits",
+        "https://fundsforindividuals.fundsforngos.org/type_of_individuals/writers/"
     ],
     "Research grants from the Pillar 2 of the Horizon Europe programme": [
         "(\"HORIZON-CL4\" OR \"HORIZON-CL5\" OR \"HORIZON-CL6\") AND (\"Type of action * Innovation\" OR \"Type of action * Research\") \"Open For Submission\" site:ec.europa.eu",

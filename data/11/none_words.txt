@@ -1,3 +1,4 @@
 contest
 for-organizations
 for-nonprofits
+site:https://fundsforindividuals.fundsforngos.org/type_of_individuals/writers/
