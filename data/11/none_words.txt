@@ -2,3 +2,4 @@ contest
 for-organizations
 for-nonprofits
 site:https://fundsforindividuals.fundsforngos.org/type_of_individuals/writers/
+site:https://www.eventbrite.ca/e/grant-writing-drop-in-workshop-series-tickets-998536679087
