@@ -19,3 +19,13 @@ site:https://builtin.com/job/marketing-manager-strategic-partnerships/3207736
 site:https://www.lonelyplanet.com/
 site:https://www.bls.gov/ooh/
 site:https://www.qub.ac.uk/courses/undergraduate/geography-bsc-f800/
+site:https://www.indeed.com/cmp/National-Geographic/salaries
+site:https://www.ziprecruiter.com/Jobs/Nuclear-Weapon
+site:https://www.indeed.com/q-expedition-l-remote-jobs.html
+site:https://www.linkedin.com/company/oceanxorg
+site:https://www.indeed.com/cmp/National-Geographic/reviews
+site:https://www.nationalgeographic.org/society/privacy-notice/
+site:https://expertvagabond.com/paid-to-travel-world/
+site:https://www.britannica.com/biography/Henry-Hudson
+site:https://ca.linkedin.com/company/butterfield-robinson
+site:https://en.wikipedia.org/wiki/Alexander_von_Humboldt
