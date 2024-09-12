@@ -1,0 +1,11 @@
+
+site:https://www.nature.com/ncomms/
+site:https://www.sciencedirect.com/browse/calls-for-papers
+site:https://www.nist.gov/
+site:https://www.mdpi.com/
+site:https://erasmus-plus.ec.europa.eu/projects/search
+site:https://msu.edu/
+site:https://www.ukri.org/councils/epsrc/
+site:https://www.britannica.com/
+site:https://en.wikipedia.org/wiki/Natural_Law_Party_(United_States)
+site:https://news.slashdot.org/story/24/09/06/1813229/college-grades-have-become-a-charade-its-time-to-abolish-them
