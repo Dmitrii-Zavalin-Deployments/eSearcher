@@ -1,1 +1,0 @@
-jobs "expeditions" (paying OR employment OR opportunities)
