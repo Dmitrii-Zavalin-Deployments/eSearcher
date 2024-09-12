@@ -9,3 +9,4 @@ site:https://iacr.org/jobs/
 site:https://www.inrf.uci.edu/cadmim/
 site:https://cadmusgroup.com/careers/search-careers/
 site:https://en.wikipedia.org/wiki/Doctor_of_Philosophy
+site:https://www.localenterprise.ie/Kildare/Training-Events/Online-Bookings/
