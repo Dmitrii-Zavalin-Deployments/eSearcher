@@ -12,3 +12,6 @@ site:https://en.wikipedia.org/wiki/Doctor_of_Philosophy
 site:https://www.localenterprise.ie/Kildare/Training-Events/Online-Bookings/
 site:https://www.vanderbilt.edu/vinse/
 site:https://www.linkedin.com/posts/peterbrereton_more-than-grants-perspectives-from-past-activity-7237027424457142272-AMiw
+site:https://pst.art/en/press/getty-to-launch-pst-art-art-science-collide-on-september-15-2024-across-southern-california
+site:https://quantumcomputingreport.com/news/
+site:https://www.sussexinnovation.co.uk/
