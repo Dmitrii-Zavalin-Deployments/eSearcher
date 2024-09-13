@@ -15,3 +15,5 @@ site:https://www.linkedin.com/posts/peterbrereton_more-than-grants-perspectives-
 site:https://pst.art/en/press/getty-to-launch-pst-art-art-science-collide-on-september-15-2024-across-southern-california
 site:https://quantumcomputingreport.com/news/
 site:https://www.sussexinnovation.co.uk/
+site:https://internalcareers.udel.edu/cw/en-us/job/500530/dispatcher-university-of-delaware-police-department
+site:https://www.mdt.mt.gov/jobs/current-openings.aspx
