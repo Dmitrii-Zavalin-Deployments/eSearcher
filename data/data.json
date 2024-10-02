@@ -1,5 +1,16 @@
 {
-  "Oceans Power Station": [
-    "This query was cleaned up at Wed 02 Oct 2024 04:27:13 PM ADT"
-  ]
+    "Oceans Power Station": [
+        "This query was cleaned up at Wed 02 Oct 2024 04:27:13 PM ADT",
+        "(\"Crowdfunding\" OR \"Grants\" OR \"Competitions\" OR \"Angel Investors\" OR \"Venture Capital\" OR \"Bank Loans\" OR \"Strategic Partnerships\") AND (\"renewable energy\" OR \"tidal energy\" OR \"wind energy\" OR \"wave energy\") AND (\"funding\")",
+        "https://www.rd.usda.gov/programs-services/energy-programs/rural-energy-america-program-renewable-energy-systems-energy-efficiency-improvement-guaranteed-loans",
+        "https://www.energy.gov/eere/wind/wind-energy-funding-opportunities",
+        "https://eere-exchange.energy.gov/",
+        "https://www.energy.gov/indianenergy/current-funding-opportunities",
+        "https://www.in.gov/oed/grants-and-funding-opportunities/homeowner-incentives/",
+        "https://www.michigan.gov/mpsc/commission/news-releases/2024/09/26/mpsc-awards-nearly-21m-in-grants-for-renewable-energy-and-electrification-projects",
+        "https://www.epa.gov/smartgrowth/smart-growth-national-funding-opportunities",
+        "https://mn.gov/commerce/energy/consumer/energy-programs/electric-grid-resilience.jsp",
+        "https://ised-isde.canada.ca/site/clean-growth-hub/en/funding-opportunities",
+        "https://www.epa.gov/brownfields/brownfields-job-training-grants"
+    ]
 }
