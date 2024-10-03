@@ -25,6 +25,17 @@
         "Query exceeds 32 words (43 words). Please shorten the query.",
         "Query exceeds 32 words (43 words). Please shorten the query.",
         "Query exceeds 32 words (43 words). Please shorten the query.",
-        "Query exceeds 32 words (43 words). Please shorten the query."
+        "Query exceeds 32 words (43 words). Please shorten the query.",
+        "(\"Crowdfunding\" OR \"Grants\" OR \"Competitions\" OR \"Angel Investors\" OR \"Venture Capital\" OR \"Bank Loans\" OR \"Strategic Partnerships\") AND (\"renewable energy\" OR \"tidal energy\" OR \"wind energy\" OR \"wave energy\") AND (\"funding\") site:ca",
+        "https://ised-isde.canada.ca/site/clean-growth-hub/en/funding-opportunities",
+        "https://natural-resources.canada.ca/climate-change/green-infrastructure-programs/sreps/23566",
+        "https://research.ucalgary.ca/conduct-research/funding/database",
+        "https://www.uvic.ca/research-innovation/office-vpri/archive-announcements/index.php",
+        "https://www.halifax.ca/about-halifax/energy-environment/halifact-2050-acting-climate-together/featured-projects",
+        "https://vet.ucalgary.ca/vetnet/resources/research-funding-opportunities-events",
+        "https://albertabusinessgrants.ca/finding-grants/?page&pagename=finding-grants&_sft_post_tag=sports",
+        "https://www.evalence.ca/blog/solar-panel-cost-alberta",
+        "https://albertabusinessgrants.ca/finding-grants/",
+        "https://www.eralberta.ca/?page_id=20144"
     ]
 }
